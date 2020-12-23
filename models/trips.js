@@ -70,6 +70,13 @@ vehiclePrice: {
 budget: {
   type: Number,
 },
+tags: [
+  {
+    type: mongoose.Schema.Types.ObjectId,
+    required: true,
+    ref: ""
+  }
+],
 created_at: {
   type: Date,
   default: Date.now,

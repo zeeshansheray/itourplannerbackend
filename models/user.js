@@ -35,6 +35,13 @@ var User = new Schema({
     type: String,
     default: 'User',
   },
+  tags: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      required: true,
+      ref: ""
+    }
+  ],
   created_at: {
     type: Date,
     default: Date.now,
